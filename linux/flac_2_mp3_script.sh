@@ -2,6 +2,8 @@
 
 #convert FLAC to mp3
 
+# place in folder of files to convert
+
 FILES="*.flac"
 
 for F in $FILES
