@@ -1,0 +1,10 @@
+:: for converting mkv files for editing
+
+:: convert audio
+:: for /R %f IN (*.mkv) DO ffmpeg -i "%f" -c:v copy -c:a pcm_s16le "%~nf.mp4"
+
+:: convert to dnxhr_lb
+:: for /R %f IN (*.mkv) DO ffmpeg -i "%f" -c:v dnxhd -profile:v dnxhr_lb -c:a pcm_s16le "%~nf.mov"
+
+:: convert to prores
+:: for /R %f IN (*.mkv) DO ffmpeg -i "%f" -c:v prores -profile:v 0 -c:a pcm_s16le "%~nf.mov"

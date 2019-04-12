@@ -1,0 +1,5 @@
+:: set max bit rate to 1200k
+:: ffmpeg -i The.Vietnam.War.2017.Part04.1080p.BluRay.H264.AAC-RARBG.mp4 -ss 00:41:50.000 -to 00:42:39.000 -c:v libvpx -crf 4 -b:v 1200K -vf scale=640:-1 -an output.webm
+
+:: use -b:v 0 to set variable bit rate
+:: ffmpeg -i The.Vietnam.War.2017.Part04.1080p.BluRay.H264.AAC-RARBG.mp4 -ss 00:41:50.000 -to 00:42:39.000 -c:v libvpx -crf 26 -b:v 0 -vf scale=640:-1 -an output.webm
